@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      p {
+        color: blue;
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      .text-orange {
+        color: orange;
+      }
+
+      #top-heading {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 32px;
+        text-shadow: 3px 3px 3px gray;
+      }
+
+      .border-red {
+        border: 2px solid red;
+        padding: 10px;
+        background-color: beige;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px gray;
+      }
+
+      .border-red h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 id="top-heading">CSS Cascading Style Sheets</h2>
+    <p style="font-style: italic; color: gray">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi cumque
+      quam numquam maiores consequatur porro, eligendi veniam, quibusdam optio
+      tempora aperiam quo magni beatae amet illum veritatis vel inventore.
+    </p>
+    <div class="border-red">
+      <h3 class="text-orange">Three ways to give styles</h3>
+      <ul>
+        <li>Inline</li>
+        <li>Internal</li>
+        <li>External</li>
+      </ul>
+    </div>
+    <h3>Classes and Ids</h3>
+    <h4 class="text-gray">
+      Class is used to give different style to same elements
+    </h4>
+  </body>
+</html>
