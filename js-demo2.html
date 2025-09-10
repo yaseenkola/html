@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bs.css" />
+    <script>
+      function changeContent() {
+        document.body.style.backgroundColor = "#dfeaec";
+
+        let myPara = document.getElementById("myPara");
+        myPara.textContent =
+          "The paragraph content has been changed. This is the new content";
+        myPara.classList.add("text-center");
+
+        let img = document.getElementById("myImg");
+        img.src = "img/paris.png";
+        img.style.border = "2px solid red";
+        img.style.width = "830px";
+
+        let myBtn = document.getElementById("myBtn");
+        myBtn.classList.remove("btn-sm");
+        myBtn.classList.add("btn-lg");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center text-danger my-3">JavaScript Demo 2</h2>
+      <p id="myPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        cupiditate reprehenderit consequatur! Consequatur, fugit dolorum
+        laboriosam corrupti similique quam voluptatum repellendus quasi error ad
+        nemo fuga adipisci eaque dignissimos. Adipisci.
+      </p>
+      <div class="text-center">
+        <img src="img/newyork.png" alt="" id="myImg" width="650px" />
+      </div>
+      <div class="mt-3 text-center">
+        <button
+          id="myBtn"
+          class="btn btn-sm text-white btn-warning"
+          onclick="changeContent()"
+        >
+          Change Content
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
